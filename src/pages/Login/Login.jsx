@@ -2,16 +2,20 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
+import Password from '../../components/Input/Password';
 
 const Login = () => {
 	return (
 		<>
 			<Navbar />
-			<div className='bg-yellow-200 flex items-center justify-center mt-28'>
-				<div className='bg-blue-200 w-100 border rounded px-10 py-10'>
+			<div className='bg-white flex items-center justify-center mt-28'>
+				<div className='bg-white w-100 border rounded px-10 py-10'>
 					<form onSubmit={{}}>
 						<h4 className='text-2xl mb-7'>Login</h4>
 						<input type='text' placeholder='Email' className='input' />
+
+						<Password></Password>
+
 						<button type='submit' className='primary-btn'>
 							Submit
 						</button>
